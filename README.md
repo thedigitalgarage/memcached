@@ -1,7 +1,8 @@
 Memcached Docker Image
 ======================
 
-This repository contains Dockerfile to run Memcached-1.4 under OpenShift v3.
+This repository contains Dockerfile to run Memcached under OpenShift v3.
+Current memcached version is 1.4.25.
 
 Configuring
 -----------

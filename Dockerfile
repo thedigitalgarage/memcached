@@ -15,5 +15,11 @@ RUN yum install --enablerepo=centosplus -y centos-release-scl epel-release && \
     yum clean all -y
 
 EXPOSE 11211
+
 USER 1001
+
+COPY container-entrypoint /usr/bin/
+
+ENTRYPOINT ["container-entrypoint"]
+
 CMD ["memcached"]

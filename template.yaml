@@ -59,6 +59,8 @@ objects:
             value: ${MEMCACHED_MAX_MEMORY}
           - name: MEMCACHED_MAX_CONNECTIONS
             value: ${MEMCACHED_MAX_CONNECTIONS}
+          - name: MEMCACHED_EXTRA_PARAMETERS
+            value: ${MEMCACHED_EXTRA_PARAMETERS}
           image: memcached
           imagePullPolicy: IfNotPresent
           name: memcached

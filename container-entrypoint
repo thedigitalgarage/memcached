@@ -10,6 +10,10 @@ if [ ${MEMCACHED_MAX_CONNECTIONS} ]; then
     OPTIONS+=" -c $MEMCACHED_MAX_CONNECTIONS"
 fi
 
+if [ ${MEMCACHED_EXTRA_PARAMETERS} ]; then
+    OPTIONS+=" $MEMCACHED_EXTRA_PARAMETERS"
+fi
+
 set -eu
 cmd="$1"; shift
 

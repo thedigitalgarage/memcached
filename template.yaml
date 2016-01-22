@@ -99,4 +99,8 @@ parameters:
 - description: Max simultaneous connections
   name: MEMCACHED_MAX_CONNECTIONS
   required: false
-  value: "1024"
+  value: "10000"
+- description: Extra command line parameters to start memcached
+  name: MEMCACHED_EXTRA_PARAMETERS
+  required: false
+  value: ""

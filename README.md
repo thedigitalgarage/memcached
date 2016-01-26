@@ -4,6 +4,8 @@ Memcached Docker Image
 This repository contains Dockerfile to run Memcached under OpenShift v3.
 Current memcached version is 1.4.25.
 
+There are sample Image Stream and Template files on https://github.com/getupcloud/origin-templates.
+
 Configuring
 -----------
 
@@ -12,14 +14,6 @@ The following environment variables are available to configure your memcached in
 * MEMCACHED_MAX_MEMORY: Max memory to use for items in megabytes
 * MEMCACHED_MAX_CONNECTIONS: Max simultaneous connections
 * MEMCACHED_EXTRA_PARAMETERS: Extra command line parameters to pass to command `memcached`
-
-OpenShift
----------
-
-Examples files are provided in order to use it on OpenShift.
-
-* imageStream.yaml: edit it to point to the images on your registry
-* template.yaml: this is a basic template to easily create memcached images
 
 Running Locally
 ---------------
